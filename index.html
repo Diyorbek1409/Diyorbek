@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayohat Agentligi</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sayohat Agentligi</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#asosiy">Asosiy</a></li>
+                <li><a href="#davlatlar">Davlatlar</a></li>
+                <li><a href="#narxlar">Narxlar</a></li>
+                <li><a href="#aloqa">Aloqa</a></li>
+                <li class="language-selector">
+                    <button onclick="changeLanguage('uz')" class="lang-btn active">UZ</button>
+                    <button onclick="changeLanguage('ru')" class="lang-btn">RU</button>
+                    <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="asosiy" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Dunyo bo'ylab sayohat qiling</h1>
+            <p>Eng mashhur joylarni kashf eting va unutilmas xotiralar yarating</p>
+            <a href="#davlatlar" class="btn">Sayohatni boshlash</a>
+        </div>
+    </section>
+
+    <section id="davlatlar" class="destinations">
+        <h2>Mashhur manzillar</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://media.timeout.com/images/106181719/750/562/image.jpg" alt="Paris">
+                <h3>Fransiya - Parij</h3>
+                <p>Eyfel minorasi va san'at muzeylari</p>
+                <p class="price">Narxi: 1500$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBO5pN8RAgeOQr58-Jd5RNjOX62MMHbkAjRA&s" alt="Dubai">
+                <h3>BAA - Dubai</h3>
+                <p>Burj Xalifa va zamonaviy me'morchilik</p>
+                <p class="price">Narxi: 1200$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://img.static-kl.com/images/media/5A8A006F-0618-4245-BBC88553D651B6E2" alt="Rome">
+                <h3>Italiya - Rim</h3>
+                <p>Kolizey va tarixiy yodgorliklar</p>
+                <p class="price">Narxi: 1300$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9reW98ZW58MHx8MHx8fDA%3D" alt="Tokyo">
+                <h3>Yaponiya - Tokio</h3>
+                <p>Zamonaviy texnologiyalar va an'analar</p>
+                <p class="price">Narxi: 1800$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.agoda.com/wp-content/uploads/2024/02/Istanbul-Turkey.jpg" alt="Istanbul">
+                <h3>Turkiya - Istanbul</h3>
+                <p>Aya Sofiya va Bosfor bo'g'ozi</p>
+                <p class="price">Narxi: 800$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://images.musement.com/cover/0002/42/view-on-manhattan-at-night-new-york-city_header-141511.jpeg?w=1200&h=630&q=95&fit=crop" alt="New York">
+                <h3>AQSH - Nyu-York</h3>
+                <p>Ozodlik haykali va Manhattan</p>
+                <p class="price">Narxi: 2000$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/41/e1/df/caption.jpg?w=700&h=-1&s=1" alt="Maldives">
+                <h3>Maldiv orollari</h3>
+                <p>Marjon orollari va tiniq dengiz</p>
+                <p class="price">Narxi: 2500$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://i.natgeofe.com/k/95d61645-a0c7-470f-b198-74a399dd5dfb/singapore-city_square.jpg" alt="Singapore">
+                <h3>Singapur</h3>
+                <p>Marina Bay Sands va zamonaviy bog'lar</p>
+                <p class="price">Narxi: 1400$ dan</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0636c382-ffa0-4979-941c-7bddb13cb190.jpg?crop=1320%2C880%2C440%2C0" alt="Egypt">
+                <h3>Misr - Qohira</h3>
+                <p>Ehromlar va Nil daryosi</p>
+                <p class="price">Narxi: 900$ dan</p>
+            </div>
+            >
+        </div>
+    </section>
+
+    <section id="narxlar" class="pricing">
+        <h2>Narxlar va xizmatlar</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Standart</h3>
+                <p class="price">800$ dan</p>
+                <ul>
+                    <li>Aviachiptalar</li>
+                    <li>3 yulduzli mehmonxona</li>
+                    <li>Transferlar</li>
+                    <li>Ekskursiyalar</li>
+                </ul>
+                <button class="btn">Tanlash</button>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Premium</h3>
+                <p class="price">1500$ dan</p>
+                <ul>
+                    <li>Biznes klass aviachiptalar</li>
+                    <li>5 yulduzli mehmonxona</li>
+                    <li>VIP transferlar</li>
+                    <li>Ekskursiyalar</li>
+                    <li>Gid xizmati</li>
+                </ul>
+                <button class="btn">Tanlash</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Oilaviy</h3>
+                <p class="price">2500$ dan</p>
+                <ul>
+                    <li>4 kishilik aviachiptalar</li>
+                    <li>4 yulduzli mehmonxona</li>
+                    <li>Transferlar</li>
+                    <li>Oilaviy ekskursiyalar</li>
+                    <li>Bolalar uchun dasturlar</li>
+                </ul>
+                <button class="btn">Tanlash</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="aloqa" class="contact">
+        <h2>Biz bilan bog'laning</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="email" placeholder="Elektron pochtangiz" required>
+                <input type="tel" placeholder="Telefon raqamingiz" required>
+                <textarea placeholder="Xabaringiz" required></textarea>
+                <button type="submit" class="btn">Yuborish</button>
+            </form>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <p>+998 94 500 00 48</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>info@sayohat.uz</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Toshkent shahri, Yashnabod tuman Aviasozlar ko'chasi, 228-uy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="loader"></div>
+
+    <div class="language-selector">
+        <select id="language">
+            <option value="uz">O'zbekcha</option>
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+        </select>
+    </div>
+
+    <div class="currency-converter">
+        <select id="from-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UZS">UZS</option>
+        </select>
+        <input type="number" id="amount" placeholder="Miqdor">
+        <select id="to-currency">
+            <option value="UZS">UZS</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <div id="conversion-result"></div>
+    </div>
+
+    <div class="chat-widget">
+        <div class="chat-header">
+            <span>Online Maslahatchi</span>
+            <span class="close-chat">&times;</span>
+        </div>
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" placeholder="Xabar yozing...">
+            <button>Yuborish</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sayohat Agentligi</h3>
+                <p>Siz uchun eng yaxshi sayohat imkoniyatlari</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ijtimoiy tarmoqlar</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sayohat Agentligi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
